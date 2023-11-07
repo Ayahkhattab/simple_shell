@@ -99,7 +99,6 @@ int custom_help(info_t *info)
 
 	if (0)
 	{
-		{
 		_puts(*arg_array); /* Temporary unused workaround */
 	}
 
