@@ -14,7 +14,7 @@ int custom_exit(info_t *info)
 {
 	if (info->args[1])
 	{
-	return handle_exit_with_status(info, info->args[1]);
+	return; /* Fix: Add parentheses */
 	}
 	else
 	{
