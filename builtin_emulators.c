@@ -4,11 +4,11 @@
  * custom_exit - Exit the shell.
  * @info: Structure containing arguments.
  *
- * Description: This function handles the "exit" built-in command.
+ * Description: This function handles the "Exit" built-in command.
  * It exits the shell with a given exit status.
  *
  * Return: Exits the shell with a given exit status.
- * -2 if successful, 1 if there's an error.
+ * (-2) if successful, (1) if there's an error.
 */
 int custom_exit(info_t *info)
 {
