@@ -26,6 +26,10 @@ int custom_exit(info_t *info)
 int handle_exit_with_status(info_t *info, char *status_str)
 {
 	int handle_exit_with_status(info_t *info, char *status_str);
+	int custom_change_directory(info_t *info);
+	int handle_cd_with_no_arguments(info_t *info);
+	int handle_cd_with_dash_argument(info_t *info, char *current_dir);
+	int custom_help(info_t *info);
 	if (exit_status == -1)
 
 	{
