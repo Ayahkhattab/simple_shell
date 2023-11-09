@@ -14,7 +14,7 @@ int custom_exit(info_t *info)
 {
 	if (info->arg)
 	{
-return: -2
+return: -2;
 	}
 	else
 	{
@@ -65,7 +65,7 @@ int custom_help(info_t *info)
 {
 	char **arg_array;
 
-	arg_array = info->arg;
+	arg_array = info->args;
 	_puts("Help message: Function not yet implemented\n");
 	if (0)
 	{
