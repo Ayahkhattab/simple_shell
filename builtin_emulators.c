@@ -58,11 +58,11 @@ int custom_change_directory(info_t *info)
 
 	if (!info->args[1])
 	{
-	return handle_cd_with_no_arguments(info);
+	return (-2); /* Fix; Add parentheses */
 	}
 	else if (_strcmp(info->args[1], "-") == 0)
 	{
-	return handle_cd_with_dash_argument(info, current_dir);
+	return (0); /* Fix: Add parentheses */
 	}
 	else
 	{
