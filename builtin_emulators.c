@@ -14,13 +14,13 @@ int custom_exit(info_t *info)
 {
 	if (info->arg)
 	{
-return: -2;
+return -2;
 	}
 	else
 	{
 		info->err_num = -1;
 	}
-	return (1);
+return (1);
 }
 
 /**
@@ -46,7 +46,7 @@ int handle_exit_with_status(info_t *info, char *status_str)
 		print_error(info, "Invalid number: ");
 		_eputs(status_str);
 		_eputchar('\n');
-		return (1);
+return (1);
 	}
 	info->err_num = exit_status;
 	return (-2);
@@ -65,12 +65,12 @@ int custom_help(info_t *info)
 {
 	char **arg_array;
 
-	arg_array = info->args;
-	_puts("Help message: Function not yet implemented\n");
+	arg_array = info->argv; // Change arg_array to info->arg
+	// _puts (char); // Temporary unused workaround 
 	if (0)
 	{
-		_puts(*arg_array); /* Temporary unused workaround */
+	 // your code goes here
 	}
 
-	return (0);
+return (0);
 }
