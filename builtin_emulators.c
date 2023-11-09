@@ -23,18 +23,6 @@ int custom_exit(info_t *info)
 	return (1);
 }
 
-/**
- * handle_exit_with_status - Exit the shell with a given exit status.
- * @info: Structure containing arguments.
- * @status_str: String containing the exit status.
- *
- * Description: This function handles the "exit" built-in command with a status argument.
- * It exits the shell with a given exit status.
- *
- * Return: -1 if there's an error, 0 if successful.
- */
-int handle_exit_with_status(info_t *info, char *status_str)
-{
 int handle_exit_with_status(info_t *info, char *status_str)
 {
 	int handle_exit_with_status(info_t *info, char *status_str);
