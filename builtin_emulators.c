@@ -20,7 +20,7 @@ int custom_exit(info_t *info)
 	{
 		info->err_num = -1;
 	}
-	return (-2);
+	return (1);
 }
 
 int handle_exit_with_status(info_t *info, char *status_str)
