@@ -25,7 +25,7 @@ int custom_exit(info_t *info)
 
 int handle_exit_with_status(info_t *info, char *status_str)
 {
-	int exit_status = _atoi(status_str);
+	int handle_exit_with_status(info_t *info, char *status_str);
 	if (exit_status == -1)
 
 	{
