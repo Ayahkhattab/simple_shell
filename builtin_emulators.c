@@ -113,7 +113,7 @@ int handle_cd_with_dash_argument(info_t *info, char *current_dir)
 		return (1);
 	}
 	_puts(_getenv(info, "OLDPWD="));
-	chdir_ret = chdir(( = _getenv(info, "OLDPWD=")) ? dir : "/");
+	chdir_ret = chdir((dir = _getenv(info, "OLDPWD=")) ? dir : "/");
 	_putchar('\n');
 	chdir_ret = chdir((dir = _getenv(info, "OLDPWD=")) ? dir : "/");
 	return (0);
