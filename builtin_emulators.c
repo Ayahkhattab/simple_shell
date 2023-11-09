@@ -14,7 +14,7 @@ int custom_exit(info_t *info)
 {
 	if (info->arg)
 	{
-return -2;
+		return (-2);
 	}
 	else
 	{
@@ -40,7 +40,9 @@ int handle_exit_with_status(info_t *info, char *status_str)
 	int handle_cd_with_dash_argument(info_t *info, char *current_dir);
 	int custom_help(info_t *info);
 	int exit_status = _atoi(status_str);
+
 	if (exit_status == -1)
+
 	{
 		info->err_num = -2;
 		print_error(info, "Invalid number: ");
@@ -65,11 +67,12 @@ int custom_help(info_t *info)
 {
 	char **arg_array;
 
-	arg_array = info->argv; // Change arg_array to info->arg
-	// _puts (char); // Temporary unused workaround 
+	arg_array = info->argv; /* Change arg_array to info->arg*/
+	/* _puts(char); Temporary unused workaround */
+	putchar('c');
 	if (0)
 	{
-	 // your code goes here
+	 /* your code goes here */
 	}
 
 return (0);
