@@ -14,7 +14,7 @@ int display_history(info_t *info)
 }
 
 /**
- * unset_alies - Unset an alies by setting it to an empty string.
+ * unset_alias - Unset an alias by setting it to an empty string.
  * @info: Parameter struct.
  * @str: The string representing the alias to unset.
  *
